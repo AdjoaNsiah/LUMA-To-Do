@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Your list | LUMA To Do</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+
+        <button id="openTaskForm">+ Add a Task</button>
+
+        <dialog id="taskDialog">
+            <form id="taskForm">
+                <h2>New Task</h2>
+
+                <label for="taskTitle">Task Title 🔴</label>
+                <input type="text" id="taskTitle" placeholder="What do you need to do??" required>
+
+                <label for="taskFolder">Folder</label>
+                <input type="text" id="taskFolder" list="folderOptions" placeholder="Choose or create a folder">
+                <datalist id="folderOptions">
+                    <option value="Chores"></option>
+                    <option value="Math"></option>
+                    <option value="Coding"></option>
+                    <option value="Grocery list"></option>
+                </datalist>
+                
+                <label for="taskDate">Due Date 🔴</label>
+                <input type="date" id="taskDate">
+
+                <label for="taskPriority">Priority 🔴</label>
+                <select id="taskPriority">
+                    <option value="VERY URGENT!!">VERY URGENT!</option>
+                    <option value="Not so urgent">Not so urgent</option>
+                    <option value="Not Urgent">Not urgent</option>
+                </select>
+
+                <label for="taskTime">When 🔴</label>
+                <input type="time" id="taskTime">
+
+                <label for="taskNotes">Notes</label>
+                <textarea id="taskNotes" placeholder="Any additional details..."></textarea>
+
+                <button type="submit">Save task</button>
+                <button type="button" id="cancelTask">Nevermind</button>
+            </form>
+        </dialog>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <!--/footer/-->
+
+
+    <script src="ltd.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/*Home Page*/
+body {
+    background-color: #080B1A;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, #FFFFFF, transparent),
+        radial-gradient(1px 1px at 80px 90px, #9BDFFF, transparent),
+        radial-gradient(2px 2px at 150px 50px, #FFFFFF, transparent),
+        radial-gradient(1px 1px at 200px 120px, #B7A6FF, transparent);
+    background-size: 250px 180px;
+    background-repeat: repeat;
+    color: #FFFFFF;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+
+.stats_container {
+    display: flex;
+    gap: 20px;
+}
+
+.stats_container section {
+    flex: 1;
+    padding: 20px;
+    background-color: #11152B;
+    border-radius: 12px;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #11152B;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+.progress-bar {
+    height: 10%;
+    width: var();
+    background-color: #7B61FF;
+    border-radius: 12px;
+
+}
+
+
+/*To Do list page*/
+body{
+    background-color: #080B1A;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, #FFFFFF, transparent),
+        radial-gradient(1px 1px at 80px 90px, #9BDFFF, transparent),
+        radial-gradient(2px 2px at 150px 50px, #FFFFFF, transparent),
+        radial-gradient(1px 1px at 200px 120px, #B7A6FF, transparent);
+    background-size: 250px 180px;
+    background-repeat: repeat;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+#taskList li {
+    background-color: #11152B;
+    border: 1px solid #292653;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
